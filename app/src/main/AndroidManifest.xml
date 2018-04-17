@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.tecnoinfsanjose.tareaandroiduno.pantalla_carga"
+            android:name="com.tecnoinfsanjose.tareaandroiduno.Views.Activity.pantalla_carga"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +24,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tecnoinfsanjose.tareaandroiduno.ActivityLogin"
+            android:name="com.tecnoinfsanjose.tareaandroiduno.Views.Activity.ActivityLogin"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name="com.tecnoinfsanjose.tareaandroiduno.ActivityHome"
+        <activity
+            android:name="com.tecnoinfsanjose.tareaandroiduno.Views.Activity.ActivityHome"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name="com.tecnoinfsanjose.tareaandroiduno.Views.Activity.ActivityListView"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 

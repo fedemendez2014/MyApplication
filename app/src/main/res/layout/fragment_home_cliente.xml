@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tecnoinfsanjose.tareaandroiduno.FragmentHomeCliente"
+    tools:context="com.tecnoinfsanjose.tareaandroiduno.Views.Fragments.FragmentHomeCliente"
     android:background="@drawable/ic_launcher_background"
     android:id="@+id/homecliente">
 
@@ -67,7 +67,7 @@
             android:layout_marginEnd="14dp"
             android:layout_marginTop="12dp"
             android:background="@android:color/holo_red_light"
-            android:text="Login"
+            android:text="Logout"
             android:textColor="@android:color/white"
             android:textSize="24sp" />
     </RelativeLayout>

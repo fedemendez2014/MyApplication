@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tecnoinfsanjose.tareaandroiduno.pantalla_carga"
+    tools:context="com.tecnoinfsanjose.tareaandroiduno.Views.Activity.pantalla_carga"
     android:background="@drawable/ic_launcher_background">
 
     <ImageView
