@@ -2,6 +2,7 @@ package com.tecnoinfsanjose.tareaandroiduno.Views.Activity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -26,7 +27,9 @@ public class ActivityHome extends AppCompatActivity implements FragmentHomeEmple
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         List<User> items = new UserControler().dameuser();
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
+        SharedPreferences sharedPref = ActivityHome.this.getPreferences(Context.MODE_PRIVATE);
+        String defaultValue = sharedPref.getString("key",null);
+
         for(User u: PersistenciaDB.userlist) {
             if(u.getCorreo().equals("c") || u.getCorreo().equals("e")){
                 if(u.getRol() == "Cliente"){
